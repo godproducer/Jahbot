@@ -22,7 +22,7 @@ if (!$me['bot']) {
             $Chat = $MadelineProto->get_info_full($peer);
             switch ($Chat['type']) {
                 case 'user':
-                    \danog\MadelineProto\Logger::log($Chat);
+                    ///\danog\MadelineProto\Logger::log($Chat);
                     break;
                 case 'supergroup':
                     \danog\MadelineProto\Logger::log($Chat);

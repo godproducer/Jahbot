@@ -22,7 +22,7 @@ if (!$me['bot']) {
         $unreadCount = $dialog['unread_count'];
         $peer = $dialog['peer'];
         try {
-            $Chat = $MadelineProto->get_info($peer);
+            $Chat = $MadelineProto->get_info_full($peer);
             switch ($Chat['type']) {
                 case 'user':
                     $vHtml .= sprintf('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>', 'Тело', $Chat['user_id'], $Chat['User']['username'], $unreadCount);
